@@ -47,4 +47,12 @@ class FrontController extends AbstractController
     {
         return $this->render('front/pricing.html.twig');
     }
+
+    /**
+     * @Route("/register", name="register")
+     */
+    public function register(): Response
+    {
+        return $this->render('front/register.html.twig');
+    }
 }

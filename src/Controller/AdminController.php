@@ -6,13 +6,40 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+/**
+ * @Route("/admin")
+ */
 class AdminController extends AbstractController
 {
     /**
-     * @Route("/admin", name="admin_main_page")
+     * @Route("/", name="admin_main_page")
      */
     public function index(): Response
     {
         return $this->render('admin/my_profile.html.twig');
+    }
+
+    /**
+     * @Route("/categories", name="categories")
+     */
+    public function categories(): Response
+    {
+        return $this->render('admin/categories.html.twig');
+    }
+
+    /**
+     * @Route("/videos", name="videos")
+     */
+    public function videos(): Response
+    {
+        return $this->render('admin/videos.html.twig');
+    }
+
+    /**
+     * @Route("/upload-video", name="upload_video")
+     */
+    public function uploadVideo(): Response
+    {
+        return $this->render('admin/upload_video.html.twig');
     }
 }

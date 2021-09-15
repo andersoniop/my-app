@@ -1,0 +1,22 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "site com vídeos do curso de symfony",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andersoniop/my-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andersoniop/my-app/issues"
+  },
+  "homepage": "https://github.com/andersoniop/my-app#readme",
+  "devDependencies": {
+    "@symfony/webpack-encore": "^1.6.1"
+  }
+}
